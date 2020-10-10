@@ -33,12 +33,15 @@ header
  
  
  header{
-    background-color: darkblue;
-    top: 0px;
-    left: 0px;
-    width: 1280px;
-    height: 100px;
-    position: relative;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 100px;
+  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000029;
+  opacity: 1;
+  position: fixed;
 }
 
   .header-left {
@@ -50,30 +53,36 @@ header
   }
   
   .header-title {
-    top: 30px;
+    top: 10px;
     left: 40px;
     width: 205px;
     height: 40px;
-    background: transparent url('img/logo.png') 0% 0% no-repeat padding-box;
+    background: transparent url(../img/component.png); 0% 0% no-repeat padding-box;
     opacity: 1;
+    position: relative;
   }
   
   .header-nav-item {
     float: left;
     margin-left: 50px;
+    list-style: none;
+    padding-top: 22px;
 
   }
   
   .header-nav-item a {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 36px;
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-
     top: 42px;
-    position: relative;
+    left: 856px;
+    width: 35px;
+    height: 16px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 16px/27px YuGothic;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-right:16px;
   }
 
 
@@ -82,7 +91,7 @@ header
 title
 ==================================*/ 
 .top {
-    background-image: url(../img/pc.jpg);
+    background-image:url(../img/pc.jpg);;
     background-size: cover;
 
     top: 100px;
@@ -136,4 +145,340 @@ title
 .btn-contact-area{
     text-align: center;
    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*==================================
+変数
+==================================*/ 
+
+
+
+:root {
+
+/* Colors: */
+--unnamed-color-3f51b5: #3F51B5;
+--unnamed-color-e81919: #E81919;
+
+/* Font/text values */
+--unnamed-font-family-yugothic: YuGothic;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-medium: medium;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-size-12: 12px;
+--unnamed-font-size-14: 14px;
+--unnamed-font-size-16: 16px;
+--unnamed-font-size-20: 20px;
+--unnamed-font-size-24: 24px;
+--unnamed-font-size-46: 46px;
+--unnamed-font-size-47: 47px;
+--unnamed-font-size-48: 48px;
+--unnamed-font-size-64: 64px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-20: 20px;
+--unnamed-line-spacing-22: 22px;
+--unnamed-line-spacing-23: 23px;
+--unnamed-line-spacing-24: 24px;
+--unnamed-line-spacing-27: 27px;
+--unnamed-line-spacing-41: 41px;
+--unnamed-line-spacing-60: 60px;
+--unnamed-line-spacing-78: 78px;
+--unnamed-line-spacing-80: 80px;
+--unnamed-line-spacing-82: 82px;
+--unnamed-line-spacing-109: 109px;
+--unnamed-decoration-underline: underline;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-14);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+text-decoration: var(--unnamed-decoration-underline);
+}
+.unnamed-character-style-2 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-14);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-3 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-14);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-cccccc);
+}
+.unnamed-character-style-4 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-14);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-5 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-6 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-20);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-7 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-8 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-24);
+line-height: var(--unnamed-line-spacing-41);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-9 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-12);
+line-height: var(--unnamed-line-spacing-22);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-10 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-14);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-11 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-6f7579);
+}
+.unnamed-character-style-12 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-23);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-e81919);
+}
+.unnamed-character-style-13 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-e81919);
+}
+.unnamed-character-style-14 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-23);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-15 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-16 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-23);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-17 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+text-decoration: var(--unnamed-decoration-underline);
+}
+.unnamed-character-style-18 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-19 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-20);
+line-height: var(--unnamed-line-spacing-22);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-6f7579);
+}
+.unnamed-character-style-20 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-24);
+line-height: var(--unnamed-line-spacing-41);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-21 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-24);
+line-height: var(--unnamed-line-spacing-41);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+}
+.unnamed-character-style-22 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-46);
+line-height: var(--unnamed-line-spacing-78);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-23 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-47);
+line-height: var(--unnamed-line-spacing-80);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-24 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-48);
+line-height: var(--unnamed-line-spacing-60);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-25 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-48);
+line-height: var(--unnamed-line-spacing-82);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+}
+.unnamed-character-style-26 {
+font-family: var(--unnamed-font-family-yugothic);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-64);
+line-height: var(--unnamed-line-spacing-109);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
 }

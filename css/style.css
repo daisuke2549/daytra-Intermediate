@@ -1,0 +1,139 @@
+@charset "UTF-8";
+body {
+  color: #082B48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082B48;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*==================================
+header
+==================================*/ 
+ 
+ 
+ header{
+    background-color: darkblue;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 100px;
+    position: relative;
+}
+
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  .header-title {
+    top: 30px;
+    left: 40px;
+    width: 205px;
+    height: 40px;
+    background: transparent url('img/logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+  .header-nav-item {
+    float: left;
+    margin-left: 50px;
+
+  }
+  
+  .header-nav-item a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 36px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+
+    top: 42px;
+    position: relative;
+  }
+
+
+  
+  /*==================================
+title
+==================================*/ 
+.top {
+    background-image: url(../img/pc.jpg);
+    background-size: cover;
+
+    top: 100px;
+    left: 0px;
+    width: 1280px;
+    height: 600px;
+  }
+
+.top-title{
+    font: normal normal bold 64px/109px YuGothic;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    top: 284px;
+    left: 288px;
+    width: 704px;
+    height: 64px;
+    position: absolute;
+}
+.top-subtitle{
+  padding-top: 32px;
+  top: 380px;
+  left: 532px;
+  width: 216px;
+  height: 24px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-41) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 24px/41px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  position: absolute;
+  opacity: 1;
+　
+}
+.btn-contact{
+
+  top: 444px;
+  left: 448px;
+  width: 384px;
+  height: 72px;
+  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  color:#FFFFFF;
+  position: absolute;
+  margin-top: 40px;
+  font-size:24px;
+}
+.btn-contact-area{
+    text-align: center;
+   margin-top: 40px;
+}

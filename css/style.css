@@ -441,32 +441,277 @@ News
 
 }
 
+/* 日付 + ラベル + タイトルをまとめたエリア */
+.info {
+  display: flex;
+}
+/* 日付 + ラベルのエリア */
+.info__meta {
+  width: 185px; /* 固定値 */
+}
+/* タイトルのエリア */
+.info__title {
+  width: calc(100% - 185px); /* 100% - 固定値 */
+}
+
+/*==================================
+price
+==================================*/
+.price{
+  top: 2500px;
+  left: 0px;
+  width: 1280px;
+  height: 688px;
+  background: #EFEFEF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-left: -10px;
+}
+
+.container-price h1{
+  top: 100px;
+  left: 580px;
+  width: 120px;
+  height: 48px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 48px/82px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  position: relative;
+}
+
+.section-price-blue-line{
+  top: 110px;
+  left: 610px;
+  width: 60px;
+  height: 4px;
+  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
+
+.price-table__image img{
+  top: 175px;
+  left: 40px;
+  width: 454px;
+  height: 286px;
+  background: transparent url('img/price-img.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
+.price-table__content{
+  display: flex;
+}
+
+.table_price{
+  width: 704px;
+}
+
+.table-default{
+  width: 100%;
+ 
+  margin-left: 40px;
+  top: 161px;
+  left: 33px;
+  width: 706px;
+  height: 286px;
+  border: 1px solid #707070;
+  opacity: 1;
+  
+  position: relative;
+}
+
+
+.table-default tr {
+  border: 1px solid #707070;
+
+}
+
+.table-default th {
+  vertical-align: middle;
+  color: white;
+  background-color: gray;
+  font: normal normal  16px YuGothic;
+}
+
+.table-default td{
+  vertical-align: middle;
+  width:40%;
+  text-align: right;
+  border: 1px solid #707070;
+}
+
+.table-default td p{
+  margin-bottom: 1px;
+}
+.table-under-comment{
+  white-space: nowrap;
+  top: 459px;
+  left: 73px;
+  width: 294px;
+  height: 14px;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  font-size: 14px;
+  position: relative;
+}
+
+
+/*==================================
+access
+==================================*/
+.section-access-blue-line{
+  top: 90px;
+  left: 633px;
+  width: 60px;
+  height: 4px;
+  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
+.access__img {
+  top: 260px;
+  left: 240px;
+  width: 800px;
+  height: 400px;
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+  white-space: nowrap;
+}
+
+
+.access__img h1{
+  top: 130px;
+  left: 20px;
+  width: 800px;
+  font-size: 48px;
+  opacity: 1;
+  position: relative;
+  white-space: nowrap;
+}
+
+.access-address{
+  display:flex; 
+  top: 255px;
+  left: 240px;
+  width: 32px;
+  height: 16px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  white-space: nowrap;
+  font: normal normal bold 16px/27px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  position: relative;
+  
+}
+
+.access-address p1{
+  margin-right: 72px;
+}
+
+.access-access{
+  display:flex; 
+}
+
+
+.access-access p3{
+  margin-right: 42px;
+}
+
+.access-access{
+  top: 275px;
+  left: 240px;
+  width: 32px;
+  height: 16px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  white-space: nowrap;
+  font: normal normal bold 16px/27px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  position: relative;
+}
+
+.google-map-access-button button{
+  top: 398px;
+  left: 488px;
+  width: 304px;
+  height: 56px;
+  font-size: 16px;
+  color: white;;
+  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  opacity: 1;
+  position: relative;
+}
+
+.google-map-access-button img{
+  top: 401px;
+  left: 444px;
+  width: 29px;
+  height: 19px;
+  background-color: transparent;
+  opacity: 1;
+  position: relative;
+  background: transparent 0% 0% no-repeat padding-box;
+}  
+
+
+
+/*==================================
+responsive
+==================================*/ 
 
 
 
 
 
 
+@media (max-width: 767px) {
+	body {
+		padding-top: 60px;
+	}
+}
 
+img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
 
+@media (min-width: 1200px) {
+	.hidden-pc {
+		display: none;
+	}
+}
 
+@media (min-width: 768px) and (max-width: 1247px) {
+	.hidden-tab {
+		display: none;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 767px) {
+	.hidden-sp {
+		display: none;
+	}
+}
 
 
 

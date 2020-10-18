@@ -879,11 +879,131 @@ footer{
   left: 1078px;
 }
 
+.footer-left h1 {
+  top: 62px;
+  left: 40px;
+  width: 205px;
+  height: 40px;
+  background: transparent url('../img/component.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
+.footer-left-bottom p1{
+  top: 100px;
+  left: 40px;
+  width: 167px;
+  height: 14px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal medium 14px/24px YuGothic;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  position: relative;
+}
+
+.footer-left-bottom p2{
+top:60px;
+left: 40px;
+width: 129px;
+height: 14px;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 14px/24px YuGothic;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+position: relative;
+}
+
+.footer-center li{
+  display: flex;
+  left: 378px;
+  width: 35px;
+  height: 16px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal medium 16px/27px YuGothic;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  position: relative;
+  top:-102px;
+  padding-left:40px;
+}
+.footer-center-bottom{
+  left: 491px;
+  width: 298px;
+  height: 14px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal medium 14px/24px YuGothic;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  position: absolute;
+  white-space: nowrap;
+  top:220px;
+  font-size: 14px;
+}
+
+
+
+.footer-right{
+  float:left;
+}
+
+.footer-right-image1{
+  float:left;
+  top: -100px;
+  position: relative;
+  left: 1118px;
+  width: 30px;
+  height: 30px;
+  background: transparent url('../img/twitter.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.footer-right-image2{
+  float:left;
+  position: relative;
+  left: 1140px;
+  width: 30px;
+  height: 30px;
+  background: transparent url('../img/facebook.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  top:-100px;
+}
+
+
+.footer-right-image3{
+  top: -100px;
+  position: relative;
+  left: 1218px;
+  width: 30px;
+  height: 30px;
+  background: transparent url('../img/instagram.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.footer-right-bottom{
+  position: relative;
+  top:-10px;
+  left: 1196px;
+  width: 60px;
+  height: 60px;
+  background: transparent url('../img/totop.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
 
 
 
 
-background: transparent url(../img/component.png); 0% 0% no-repeat padding-box;
 
 /*==================================
 responsiveスマホ用の表示

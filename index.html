@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="description" content="ディスクリプションです">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -216,5 +217,99 @@
         </div>
     </div>
 </section>
+<section class="contact" id="contact">
+    <div class="container-contact">
+        <h1>Contact</h1>
+        <p class="section-contact-blue-line"></p>
+    <div class="contact-form">
+        <form action="#">
+            <dl class="contact__controls">
+                <div class="contact__control">
+                    <dt>
+                        <label class="contact__label contact__label--required" for="your-name">お名前</label>
+                    </dt>
+                    <dd>
+                        <input id="your-name" class="form-input" type="text" name="your-name" value="" placeholder="山田　太郎" required>
+                    </dd>
+                </div><!-- /.contact__control -->
+                <div class="contact__control">
+                    <dt>
+                        <label class="contact__label contact__label--required" for="your-mail">メールアドレス</label>
+                    </dt>
+                    <dd>
+                        <input id="your-mail" class="form-input" type="email" name="your-mail" value="" placeholder="text@example.com" required>
+                    </dd>
+                </div><!-- /.contact__control -->
+                <div class="contact__control">
+                    <dt>
+                        <label class="contact__label" for="your-kind">お問い合わせ種別</label>
+                    </dt>
+                    <dd>
+                        <select id="your-kind" class="form-select">
+                            <option value="">ーーー</option>
+                            <option value="a">セレクトA</option>
+                            <option value="b">セレクトB</option>
+                            <option value="c">セレクトC</option>
+                        </select>
+                    </dd>
+                </div><!-- /.contact__control -->
+                <div class="contact__control">
+                    <dt>
+                        <label class="contact__label" for="your-message">お問い合わせ内容</label>
+                    </dt>
+                    <dd>
+                        <textarea id="your-message" class="form-textarea" name="your-message" placeholder="お問い合わせを入力してください"></textarea>
+                    </dd>
+                </div><!-- /.contact__control -->
+            </dl><!-- /.contact__controls -->
+            <div class="contact__radio">
+                <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio" checked><span>ラジオ１</span></label>
+                <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ２</span></label>
+                <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ３</span></label>
+            </div><!-- /.contact__radio -->
+            <div class="contact__check">
+                <label>
+                    <input class="form-checkbox" type="checkbox" name="your-checkbox" required>
+
+                    <span><a href="">プライバシーポリシー</a>に合意する</span>
+
+                </label>
+            </div><!-- /.contact__check -->
+            <div class="contact__submit"><input class="button-arrow-right" type="submit" value="送信する"><img src="img/button-arrow.png" alt=""></div><!-- /.contact__submit -->
+        </form>
+    </div><!-- /.contact__item -->
+</div><!-- /.contact__inner -->
+</section><!-- /.contact -->
+<footer>
+<div class="footer__inner">    
+    <div class="footer-left">
+        <h1 class="footer-title"></h1>
+    </div>
+    <div class="footer-center">
+        <ul class="header-nav clear">
+        <li class="header-nav-item"><a href="#card">Card</a></li>
+
+        <li class="header-nav-item"><a href="#News">News</a></li> 
+
+        <li class="header-nav-item"><a href="#price">Price</a></li> 
+
+        <li class="header-nav-item"><a href="#access">Access</a></li> 
+
+        <li class="header-nav-item"><a href="#contact">Contact</a></li> 
+        </ul>
+    </div>
+    <div class="footer-right">
+        <ul class="footer-right-image">
+            <img src="img/twitter.png" alt="">
+            <img src="img/facebook.png" alt="">
+            <img src="img/instagram.png" alt="">
+  
+        </ul>
+    </div>
+
+</div>
+
+
+</footer>
 </body>
 </html>

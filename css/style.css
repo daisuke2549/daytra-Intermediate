@@ -336,6 +336,8 @@ News
   position: relative;
 }
 
+
+
 .btn-square p{
   font-size: 16px;
   top:-45px;
@@ -502,6 +504,10 @@ price
   background: transparent url('img/price-img.png') 0% 0% no-repeat padding-box;
   opacity: 1;
   position: relative;
+}
+.price-table__image img:hover{ 
+  width: 500px;
+  height: 400px;
 }
 
 .price-table__content{
@@ -952,6 +958,31 @@ position: relative;
   font-size: 14px;
 }
 
+.footer-center-bottom-area{
+  position: absolute;
+  left: 332px;
+  width: 617px;
+  height: 80px;
+  opacity: 1;
+  background: transparent url('../img/copy-bg.png') 0% 0% no-repeat padding-box;
+}
+
+
+.footer-center-bottom-area h1{
+  position:absolute ;
+  left: 151px;
+  top:30px;
+  width: 298px;
+  height: 14px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 14px;
+  font-style: YuGothic;
+  white-space: nowrap;
+}
 
 
 .footer-right{
@@ -992,10 +1023,11 @@ position: relative;
 }
 
 .footer-right-bottom{
-  position: relative;
-  top:-10px;
+  position: fixed;
+  top:350px;
   left: 1196px;
   width: 60px;
+  bottom: 24px;
   height: 60px;
   background: transparent url('../img/totop.png') 0% 0% no-repeat padding-box;
   opacity: 1;

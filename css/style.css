@@ -1034,9 +1034,6 @@ position: relative;
 }
 
 
-
-
-
 /*==================================
 responsiveスマホ用の表示
 ==================================*/ 
@@ -1396,3 +1393,5 @@ line-height: var(--unnamed-line-spacing-109);
 letter-spacing: var(--unnamed-character-spacing-0);
 color: var(--unnamed-color-333333);
 }
+
+

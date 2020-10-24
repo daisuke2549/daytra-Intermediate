@@ -178,7 +178,6 @@ card-list
   opacity: 1;
   position: relative;
   margin-right:40px;
-
 } 
 
 .section-title-blue-line{
@@ -190,7 +189,6 @@ card-list
   background: #3F51B5 0% 0% no-repeat padding-box;
   opacity: 1;
   position: relative;
-
 }
 
 .media{
@@ -595,6 +593,21 @@ access
   position: relative;
   white-space: nowrap;
 }
+.container-access{
+  top: 100px;
+  left: 580px;
+  width: 120px;
+  height: 48px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal bold 48px/82px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  position: relative;
+}
+
 
 
 .access__img h1{
@@ -1024,8 +1037,8 @@ position: relative;
 
 .footer-right-bottom{
   position: fixed;
-  top:350px;
-  left: 1196px;
+  top:610px;
+  left: 1216px;
   width: 60px;
   bottom: 24px;
   height: 60px;
@@ -1038,14 +1051,14 @@ position: relative;
 responsiveスマホ用の表示
 ==================================*/ 
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1247px) {
   .clear::after {
     content: none;
 }
 
 
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1247px) {
 	body {
     padding-top: 60px;
     margin-right: -100px;
@@ -1057,6 +1070,44 @@ img {
 	height: auto;
 	border: none;
 }
+
+@media (min-width: 768px) and (max-width: 1247px)  {
+.header{
+top: 0px;
+left: 0px;
+width: 60px;
+height: 100px;
+background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+background: #3F51B5 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 3px #00000029;
+opacity: 1;
+position: fixed;
+}
+.header-nav-item {
+  float: left;
+  margin-left:5px;
+  list-style: none;
+  padding-top: 22px;
+
+}
+
+.header-nav-item a {
+  top: 42px;
+  left: 16px;
+  width: 35px;
+  height: 16px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal medium 16px/27px YuGothic;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  padding-right:16px;
+}
+}
+}  
+
 
 @media (min-width: 1200px) {
 	.hidden-pc {
@@ -1081,7 +1132,7 @@ img {
 headerのcss(スマホ用)
 ==================================*/
 
-.header-title {
+.header-title{
   top: 10px;
   left: 10px;
   width: 205px;
@@ -1094,304 +1145,197 @@ headerのcss(スマホ用)
   float: right;
 }
 
-  
+@media (min-width: 768px) and (max-width: 1247px) {
 .header-nav-item {
   position: relative;
-  left:-115px;
+  left:-195px;
   float: left;
   margin-left: 1px;
   list-style: none;
   padding-top: 22px;
-  font-size: 8px;
-
+  font-size: 4px;
+}
 }
 
-
-
-}
-
-
-
-
-
-  
 /*==================================
-変数
-==================================*/ 
-
-
-
-:root {
-
-/* Colors: */
---unnamed-color-3f51b5: #3F51B5;
---unnamed-color-e81919: #E81919;
-
-/* Font/text values */
---unnamed-font-family-yugothic: YuGothic;
---unnamed-font-style-normal: normal;
---unnamed-font-weight-medium: medium;
---unnamed-font-weight-bold: bold;
---unnamed-font-size-12: 12px;
---unnamed-font-size-14: 14px;
---unnamed-font-size-16: 16px;
---unnamed-font-size-20: 20px;
---unnamed-font-size-24: 24px;
---unnamed-font-size-46: 46px;
---unnamed-font-size-47: 47px;
---unnamed-font-size-48: 48px;
---unnamed-font-size-64: 64px;
---unnamed-character-spacing-0: 0px;
---unnamed-line-spacing-20: 20px;
---unnamed-line-spacing-22: 22px;
---unnamed-line-spacing-23: 23px;
---unnamed-line-spacing-24: 24px;
---unnamed-line-spacing-27: 27px;
---unnamed-line-spacing-41: 41px;
---unnamed-line-spacing-60: 60px;
---unnamed-line-spacing-78: 78px;
---unnamed-line-spacing-80: 80px;
---unnamed-line-spacing-82: 82px;
---unnamed-line-spacing-109: 109px;
---unnamed-decoration-underline: underline;
+topのcss(スマホ用)
+==================================*/
+@media (max-width: 767px) {
+.top{
+  background-image:url(../img/pc.jpg);;
+  background-size: cover;
+  margin-left:0px;
+  top: 250px;
+  left: 0px;
+  width: 110%;
+  height: 600px;
+  margin-bottom: -50px;
+  margin-left:-10px;
 }
-
-/* Character Styles */
-.unnamed-character-style-1 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-14);
-line-height: var(--unnamed-line-spacing-24);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-text-decoration: var(--unnamed-decoration-underline);
+@media (max-width: 768px){
+.top-title{
+  font: normal normal bold 64px/109px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  top: 192px;
+  font-size:30px;
+  left: 30px;
+  width: 704px;
+  height: 64px;
+  position: relative;
 }
-.unnamed-character-style-2 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-14);
-line-height: var(--unnamed-line-spacing-24);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
+@media (max-width: 768px){
+.top-subtitle{
+  position: relative;
+  left:88px;
+  top:140px;
 }
-.unnamed-character-style-3 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-14);
-line-height: var(--unnamed-line-spacing-24);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-cccccc);
-}
-.unnamed-character-style-4 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-14);
-line-height: var(--unnamed-line-spacing-24);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-ffffff);
-}
-.unnamed-character-style-5 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-27);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-ffffff);
-}
-.unnamed-character-style-6 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-20);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-7 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-27);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-8 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-medium);
-font-size: var(--unnamed-font-size-24);
-line-height: var(--unnamed-line-spacing-41);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-9 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-12);
-line-height: var(--unnamed-line-spacing-22);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-10 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-14);
-line-height: var(--unnamed-line-spacing-24);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-ffffff);
-}
-.unnamed-character-style-11 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-24);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-6f7579);
-}
-.unnamed-character-style-12 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-23);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-e81919);
-}
-.unnamed-character-style-13 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-27);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-e81919);
-}
-.unnamed-character-style-14 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-23);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-ffffff);
-}
-.unnamed-character-style-15 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-27);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-ffffff);
-}
-.unnamed-character-style-16 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-23);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-17 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-27);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-text-decoration: var(--unnamed-decoration-underline);
-}
-.unnamed-character-style-18 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-16);
-line-height: var(--unnamed-line-spacing-27);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-19 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-20);
-line-height: var(--unnamed-line-spacing-22);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-6f7579);
-}
-.unnamed-character-style-20 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-24);
-line-height: var(--unnamed-line-spacing-41);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-21 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-24);
-line-height: var(--unnamed-line-spacing-41);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-ffffff);
-}
-.unnamed-character-style-22 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-46);
-line-height: var(--unnamed-line-spacing-78);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-23 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-47);
-line-height: var(--unnamed-line-spacing-80);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-24 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-48);
-line-height: var(--unnamed-line-spacing-60);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-25 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-48);
-line-height: var(--unnamed-line-spacing-82);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
-}
-.unnamed-character-style-26 {
-font-family: var(--unnamed-font-family-yugothic);
-font-style: var(--unnamed-font-style-normal);
-font-weight: var(--unnamed-font-weight-bold);
-font-size: var(--unnamed-font-size-64);
-line-height: var(--unnamed-line-spacing-109);
-letter-spacing: var(--unnamed-character-spacing-0);
-color: var(--unnamed-color-333333);
+.btn-contact{
+  top: 314px;
+  left: 50px;
+  width: 284px;
+  height: 72px;
+  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  background: #3F51B5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  color:#FFFFFF;
+  position: absolute;
+  margin-top: 30px;
+  font-size:24px;
 }
 
 
+/*==================================
+cardのcss(スマホ用)
+==================================*/
+@media (max-width: 768px){
+.card{
+  top: 700px;
+  left: 0px;
+  width: 110%;
+  height: 2342px;
+}
+
+.card__item {
+  left:20px;
+	font-size: 16px;
+	width: calc(33.33333333% - 24px * 2 / 3);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  width: 334px;
+  height: 321px;
+  top: 212px;
+  margin-bottom:16px;
+  position: relative;
+}
+.section-title{
+    left:130px;
+}
+.section-title-blue-line{
+  left:150px;
+}
+.media__img{
+  width:300px;
+}
+
+
+/*==================================
+Newsのcss(スマホ用)
+==================================*/
+@media (max-width: 768px){
+.News{
+  height:100%;
+}
+
+.container-news {
+  left:105px;
+  position: relative;
+}
+.container-news-area{
+  left:-80px;
+}
+.news-content{
+  left:5px;
+}
+.container-news-area{
+  border:solid, 1px;
+  width:300px;
+}
+.container-news-footer h1{
+  left:155px;
+  position: relative;
+}
+.container-news-footer h2{
+  left:145px;
+  position: relative;
+}
+
+/*==================================
+priceのcss(スマホ用)
+==================================*/
+@media (max-width: 768px){
+.price{
+  width:110%;
+  height:1000px;
+}
+.section-price-blue-line{
+  left:160px;
+}
+
+
+.container-price h1{
+  left:130px;
+} 
+.price-table__image img{
+  width:300px;
+}
+.price-table__content{
+  flex-direction: column
+}
+
+.table-default{
+  width:300px;
+  margin-top: 0px;
+  left:0px;
+}
+.table-under-comment{
+  left:40px;
+}
+/*==================================
+Accessのcss(スマホ用)
+==================================*/
+@media (max-width: 768px){
+.section-access-blue-line{
+  left:180px;
+}
+.access__img {
+  top: 260px;
+  left: 40px;
+  width: 300px;
+  height: 300px;
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+  white-space: nowrap;
+}
+
+.access-address {
+  left:40px;
+}
+
+
+
+.access-access{
+  left:40px;
+}
+
+
+
+}
+}
+}
+}
+}

@@ -39,7 +39,7 @@ header
   height: 100px;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   background: #3F51B5 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 3px #00000029;
+
   opacity: 1;
   position: fixed;
 
@@ -58,9 +58,9 @@ header
     left: 40px;
     width: 205px;
     height: 40px;
-    background: transparent url(../img/component.png); 0% 0% no-repeat padding-box;
     opacity: 1;
     position: relative;
+    background: transparent url(../img/component.png);
   }
   
   .header-nav-item {
@@ -76,7 +76,7 @@ header
     left: 856px;
     width: 35px;
     height: 16px;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) ;
     letter-spacing: var(--unnamed-character-spacing-0);
     text-align: left;
     font: normal normal medium 16px/27px YuGothic;
@@ -120,7 +120,7 @@ title
   left: 532px;
   width: 216px;
   height: 24px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-41) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-41) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal bold 24px/41px YuGothic;
@@ -128,7 +128,6 @@ title
   color: #333333;
   position: absolute;
   opacity: 1;
-　
 }
 .btn-contact{
 
@@ -138,7 +137,6 @@ title
   height: 72px;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   background: #3F51B5 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
   border-radius: 8px;
   color:#FFFFFF;
   position: absolute;
@@ -169,7 +167,7 @@ card-list
   left: 585px;
   width: 110px;
   height: 48px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal bold 48px/82px YuGothic;
@@ -236,7 +234,7 @@ card-list
   left: 25px;
   width: 158px;
   height: 20px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-22) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   font: normal normal bold 20px/22px YuGothic;
@@ -252,7 +250,7 @@ card-list
   left: 25px;
   width: 352px;
   height: 42px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   font: normal normal bold 16px/24px YuGothic;
@@ -270,7 +268,7 @@ News
   left: 574px;
   width: 132px;
   height: 48px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal bold 48px/82px YuGothic;
@@ -306,7 +304,7 @@ News
   right: 40px;
   width: 85px;
   height: 16px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   font: normal normal medium 16px/27px YuGothic;
@@ -420,7 +418,7 @@ News
   left: 613px;
   width: 40px;
   height: 16px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-e81919);
   text-align: left;
@@ -472,7 +470,7 @@ price
   left: 580px;
   width: 120px;
   height: 48px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal bold 48px/82px YuGothic;
@@ -598,7 +596,7 @@ access
   left: 580px;
   width: 120px;
   height: 48px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal bold 48px/82px YuGothic;
@@ -626,7 +624,7 @@ access
   left: 240px;
   width: 32px;
   height: 16px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   white-space: nowrap;
   font: normal normal bold 16px/27px YuGothic;
@@ -655,7 +653,7 @@ access
   left: 240px;
   width: 32px;
   height: 16px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27);
   letter-spacing: var(--unnamed-character-spacing-0);
   white-space: nowrap;
   font: normal normal bold 16px/27px YuGothic;
@@ -674,7 +672,6 @@ access
   color: white;;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   background: #3F51B5 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
   border-radius: 8px;
   opacity: 1;
   position: relative;
@@ -712,7 +709,7 @@ contact
   left: 546px;
   width: 184px;
   height: 48px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal bold 48px/82px YuGothic;
@@ -752,7 +749,7 @@ contact
   left: 100px;
   width: 48px;
   height: 16px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   font: normal normal bold 16px/27px YuGothic;
@@ -854,7 +851,6 @@ contact
   height: 56px;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   background: #3F51B5 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
   border-radius: 8px;
   opacity: 1;
   position: relative;
@@ -863,7 +859,7 @@ contact
 
 
 .button-arrow-right{
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal bold 16px/27px YuGothic;
@@ -913,7 +909,7 @@ footer{
   left: 40px;
   width: 167px;
   height: 14px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   font: normal normal medium 14px/24px YuGothic;
@@ -928,7 +924,7 @@ top:60px;
 left: 40px;
 width: 129px;
 height: 14px;
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) ;
 letter-spacing: var(--unnamed-character-spacing-0);
 text-align: left;
 font: normal normal medium 14px/24px YuGothic;
@@ -943,7 +939,7 @@ position: relative;
   left: 378px;
   width: 35px;
   height: 16px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   font: normal normal medium 16px/27px YuGothic;
@@ -958,7 +954,7 @@ position: relative;
   left: 491px;
   width: 298px;
   height: 14px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   font: normal normal medium 14px/24px YuGothic;
@@ -987,7 +983,7 @@ position: relative;
   top:30px;
   width: 298px;
   height: 14px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) ;
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: center;
   color: #FFFFFF;
@@ -1042,7 +1038,7 @@ position: relative;
   width: 60px;
   bottom: 24px;
   height: 60px;
-  background: transparent url('../img/totop.png') 0% 0% no-repeat padding-box;
+  background: transparent url('../img/top.png') 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
@@ -1051,7 +1047,7 @@ position: relative;
 responsiveスマホ用の表示
 ==================================*/ 
 
-@media (min-width: 768px) and (max-width: 1247px) {
+@media (max-width: 768px){
   .clear::after {
     content: none;
 }
@@ -1062,14 +1058,15 @@ responsiveスマホ用の表示
 	body {
     padding-top: 60px;
     margin-right: -100px;
+    img {
+      max-width: 100%;
+      height: auto;
+      border: none;
+    }
 	}
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	border: none;
-}
+
 
 @media (min-width: 768px) and (max-width: 1247px)  {
 .header{
@@ -1079,7 +1076,6 @@ width: 60px;
 height: 100px;
 background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
 background: #3F51B5 0% 0% no-repeat padding-box;
-box-shadow: 0px 3px 3px #00000029;
 opacity: 1;
 position: fixed;
 }
@@ -1096,7 +1092,7 @@ position: fixed;
   left: 16px;
   width: 35px;
   height: 16px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   font: normal normal medium 16px/27px YuGothic;
@@ -1106,7 +1102,6 @@ position: fixed;
   padding-right:16px;
 }
 }
-}  
 
 
 @media (min-width: 1200px) {
@@ -1131,21 +1126,21 @@ position: fixed;
   /*==================================
 headerのcss(スマホ用)
 ==================================*/
-
+@media (max-width: 768px){
 .header-title{
   top: 10px;
   left: 10px;
   width: 205px;
   height: 40px;
-  background: transparent url(../img/component.png); 0% 0% no-repeat padding-box;
+  background: transparent url(../img/component.png);
   opacity: 1;
   position: relative;
 }
 .header-right {
   float: right;
 }
-
-@media (min-width: 768px) and (max-width: 1247px) {
+}
+@media (max-width: 768px){ 
 .header-nav-item {
   position: relative;
   left:-195px;
@@ -1198,7 +1193,7 @@ topのcss(スマホ用)
   height: 72px;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   background: #3F51B5 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
+
   border-radius: 8px;
   color:#FFFFFF;
   position: absolute;
@@ -1219,7 +1214,7 @@ cardのcss(スマホ用)
 }
 
 .card__item {
-  left:20px;
+  left:25px;
 	font-size: 16px;
 	width: calc(33.33333333% - 24px * 2 / 3);
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -1281,10 +1276,11 @@ priceのcss(スマホ用)
   width:110%;
   height:1000px;
 }
+@media (max-width: 768px){
 .section-price-blue-line{
   left:160px;
 }
-
+}
 
 .container-price h1{
   left:130px;
@@ -1298,16 +1294,20 @@ priceのcss(スマホ用)
 
 .table-default{
   width:300px;
-  margin-top: 0px;
+  margin-top: 40px;
   left:0px;
 }
 .table-under-comment{
   left:40px;
+  position: relative;
+  top:500px;
 }
 /*==================================
 Accessのcss(スマホ用)
 ==================================*/
-@media (max-width: 768px){
+.access{
+  width:110%;
+}
 .section-access-blue-line{
   left:180px;
 }
@@ -1320,20 +1320,81 @@ Accessのcss(スマホ用)
   opacity: 1;
   position: relative;
   white-space: nowrap;
+h1{
+  left:-250px;
+  top:60px;
+  font-size: 39px;
+}
+.google-map-access-button button{
+  top: 398px;
+  left: -178px;
+  position: absolute;
+}
+}
 }
 
 .access-address {
   left:40px;
 }
-
-
-
 .access-access{
   left:40px;
 }
 
+/*==================================
+Contactのcss(スマホ用)
+==================================*/
+.contact{
+  width:110%;
+  margin-left:-10px;
+}
+.container-contact h1{
+  left:90px;
+}
+.section-contact-blue-line{
+  left:155px;
+}
+.contact-form{
+  top:200px;
+  left: 50px;
+  width: 300px;
+  height: 877px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+.contact__control {
+  dt{
+    left:10px;
+    font-size: 12px;
+  }
+  dd input{
+    left:20px;
+    width:170px;
+  }
+}
+.form-select{
+  left:22px;
+  width: 175px;
+}
+.form-textarea{
+  left:22px;
+  width: 175px;
+  height: 200px;
+}
+.contact__radio{
+  left:10px;
+}
+.contact__check{
+  left:10px;
+}
+.contact__submit input{
+  left:10px;
+  width:280px;
+}
 
 
+
+}
 }
 }
 }

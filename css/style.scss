@@ -56,7 +56,7 @@ header
   }
   
   
-  .header-title {
+  .header-title1 {
     top: 0px;
     left: 40px;
     width: 205px;
@@ -1284,7 +1284,7 @@ header{
   width:110%;
 }
 
-.header-title{
+.header-title1{
   top: 0px;
   left: 10px;
   width: 207px;
@@ -1302,7 +1302,7 @@ header{
 .header-nav-item {
   position: relative;
   left:-50px;
-  top:-10px;
+  top:-15px;
   float: left;
   margin-left: 1px;
   list-style: none;
@@ -1545,7 +1545,7 @@ Contactのcss(スマホ用)
 }
 .contact-form{
   top:200px;
-  left: 60px;
+  left: 50px;
   width: 300px;
   height: 877px;
   background: #FFFFFF 0% 0% no-repeat padding-box;

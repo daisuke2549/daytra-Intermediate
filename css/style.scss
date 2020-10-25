@@ -1,12 +1,18 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=hoge');
+$font-family-english: 'Lato', sans-serif; 
+
+
 body {
   color: #082B48;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
+  font-family: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  width:100%;
 }
 
 img {
-  width: 100%;
+  width: 120%;
   height: auto;
 }
 
@@ -35,7 +41,7 @@ header
  header{
   top: 0px;
   left: 0px;
-  width: 1280%;
+  width: 1280px;
   height: 100px;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   background: #3F51B5 0% 0% no-repeat padding-box;
@@ -62,14 +68,29 @@ header
 
 
   .header-nav-item {
+    font-family: "Lato", sans-serif;
     float: left;
     list-style: none;
     padding-top: 22px;
     padding-left: 20px;
-    left:1100px;
+    left:580px;
     position: relative;
-   font-size: 20px;
-   top:10px;
+    font-size: 20px;
+    top:10px;
+    cursor: pointer;
+  }
+  .header-nav-item::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background:red;
+    transition: all 0.3s ease 0s;
+  }
+  .header-nav-item:hover::after {
+    width:100%;
   }
   
   .header-nav-item a {
@@ -114,9 +135,11 @@ title
     width: 704px;
     height: 64px;
     position: absolute;
+    font-family: "Noto Sans JP", sans-serif;
 }
 .top-subtitle{
   padding-top: 32px;
+  font-family: "Noto Sans JP", sans-serif;
   top: 310px;
   left: 532px;
   width: 216px;
@@ -131,7 +154,7 @@ title
   opacity: 1;
 }
 .btn-contact{
-
+  font-family: "Noto Sans JP", sans-serif;
   top: 404px;
   left: 448px;
   width: 384px;
@@ -144,10 +167,49 @@ title
   margin-top: 30px;
   font-size:24px;
 }
+
+
+.top-img-left{
+  top: 294px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  /* UI Properties */
+  background: transparent url('img/arrow-prev.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
+
+.top-img-right{
+  top: 294px;
+  left:1180px;
+  background-color: red($color: #000000);
+  width: 40px;
+  height: 40px;
+  /* UI Properties */
+  background: transparent url('img/arrow-next.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
 .btn-contact-area{
-    text-align: center;
+  text-align: center;
    margin-top: 40px;
 }
+
+.top-round-color p1{
+  top: 568px;
+  left: 192px;
+  width: 116px;
+  height: 116px;
+  /* UI Properties */
+  background: #2F7DC8 100% 100% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+  border-radius: 50%
+}
+
 
   /*==================================
 card-list
@@ -164,6 +226,7 @@ card-list
 }
 
 .section-title{
+  font-family: "Lato", sans-serif;
   top: 149px;
   left: 585px;
   width: 110px;
@@ -222,7 +285,7 @@ card-list
 .media__img{
   top:16px;
   left: 20px;
-  width: 352px;
+  width: 288px;
   height: 195px;
   background: transparent url('img/card-img.png') 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -243,10 +306,11 @@ card-list
   color: #6F7579;
   opacity: 1;
   position: relative;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .media__content{
-
+  font-family: "Noto Sans JP", sans-serif;
   top: 47px;
   left: 25px;
   width: 352px;
@@ -312,23 +376,25 @@ News
   letter-spacing: 0px;
   font-size: 16px;
   color: #333333;
+  font-family: "Lato", sans-serif;
   opacity: 1;
   white-space: nowrap;
   position: relative;
 }
 .btn-square  {
-  top:0px;
+  top:5px;
+  right:20px;
   white-space: nowrap;
   font-size: 16px;
-  right:20px;
+
   width: 60px;
+  left:10px;
   height: 22px;
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
   background: #666666 0% 0% no-repeat padding-box;
   color:black;
-
   border-radius: 3px;
   position: relative;
 }
@@ -340,13 +406,15 @@ News
   top:-45px;
   position: relative;
   color: #EFEFEF;
+  font-family: "Noto Sans JP", sans-serif;
 } 
 
 .btn-square2  {
-  top:0px;
+  top:5px;
+  right:20px;
   white-space: nowrap;
   font-size: 16px;
-  right:20px;
+  left:10px;
   width: 60px;
   height: 22px;
   display: inline-block;
@@ -363,14 +431,16 @@ News
   font-size: 16px;
   top:-45px;
   position: relative;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 
 .btn-square3  {
-  top:0px;
+  top:5px;
+  left:10px;
   white-space: nowrap;
   font-size: 16px;
-  right:20px;
+
   width: 60px;
   height: 22px;
   display: inline-block;
@@ -387,6 +457,7 @@ News
   font-size: 16px;
   top:-45px;
   position: relative;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .btn-square:active {
@@ -402,6 +473,7 @@ News
   position: relative;
   left: 30px;
   top:-15px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .container-news-area{
@@ -468,7 +540,7 @@ price
 
 .container-price h1{
   top: 100px;
-  left: 580px;
+  left: 575px;
   width: 120px;
   height: 48px;
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-82);
@@ -479,6 +551,7 @@ price
   color: #333333;
   opacity: 1;
   position: relative;
+  font-family: "Lato", sans-serif;
 }
 
 .section-price-blue-line{
@@ -501,10 +574,11 @@ price
   background: transparent url('img/price-img.png') 0% 0% no-repeat padding-box;
   opacity: 1;
   position: relative;
+  transition: all 1s linear 0s;
 }
 .price-table__image img:hover{ 
-  width: 500px;
-  height: 400px;
+  cursor: pointer;
+  transform: rotateX(360deg);
 }
 
 .price-table__content{
@@ -532,17 +606,19 @@ price
 
 .table-default tr {
   border: 1px solid #707070;
-
+  font-family: "Lato", sans-serif;
 }
 
 .table-default th {
   vertical-align: middle;
   color: white;
+  font-family: "Lato", sans-serif;
   background-color: gray;
   font: normal normal  16px YuGothic;
 }
 
 .table-default td{
+  font-family: "Lato", sans-serif;
   vertical-align: middle;
   width:40%;
   text-align: right;
@@ -565,6 +641,7 @@ price
   opacity: 1;
   font-size: 14px;
   position: relative;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 
@@ -591,8 +668,13 @@ access
   opacity: 1;
   position: relative;
   white-space: nowrap;
+h1{  
+  font-family: "Noto Sans JP", sans-serif;
 }
+}
+
 .container-access{
+  font-family: "Noto Sans JP", sans-serif;
   top: 100px;
   left: 580px;
   width: 120px;
@@ -633,7 +715,13 @@ access
   color: #333333;
   opacity: 1;
   position: relative;
-  
+h1{
+  font-family: "Noto Sans JP", sans-serif;
+
+} 
+h2{
+  font-family: "Noto Sans JP", sans-serif;
+}   
 }
 
 .access-address p1{
@@ -676,7 +764,9 @@ access
   border-radius: 8px;
   opacity: 1;
   position: relative;
+  font-family: "Noto Sans JP", sans-serif;
 }
+
 
 .google-map-access-button img{
   top: 401px;
@@ -702,6 +792,7 @@ contact
   background: #EFEFEF 0% 0% no-repeat padding-box;
   opacity: 1;
   position: relative;
+  
 }
 
 
@@ -739,6 +830,7 @@ contact
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
   position: relative;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .contact__control{
   display: flex;
@@ -759,6 +851,7 @@ contact
   white-space: nowrap;
   opacity: 1;
   position: relative;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .contact__control dd input {
   top:32px;
@@ -796,10 +889,14 @@ contact
 .contact__radio{
   top: 50px;
   left: 60px;
+  font-family: "Noto Sans JP", sans-serif;
   width: 348px;
   height: 20px;
   opacity: 1;
   position: relative;
+}
+.contact__radio span{
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 
@@ -838,6 +935,7 @@ contact
   letter-spacing: 0px;
   color: #333333;
   opacity: 1;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .contact__check span a{
   font-weight: bold;
@@ -856,6 +954,13 @@ contact
   opacity: 1;
   position: relative;
   color: white;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.contact__submit input:hover{
+  background:black;
+  color: red;
 }
 
 
@@ -894,6 +999,39 @@ footer{
   opacity: 1;
   left: 1078px;
 }
+.footer-nav-item {
+  float: left;
+  list-style: none;
+  padding-top: 22px;
+  left:600px;
+  position: relative;
+  font-size: 20px;
+  top:8px;
+  cursor: pointer;
+
+li{
+  padding-right:10px;
+}  
+}
+
+.footer-nav-item a {
+  top: 35px;
+  left: 856px;
+  width: 35px;
+  height: 16px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) ;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal medium 16px/27px YuGothic;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  padding-right: 20px;
+  font-size: 20px;
+  padding-right:16px;
+  font-family: "Lato", sans-serif;
+}
+
 
 .footer-left h1 {
   top: 62px;
@@ -918,6 +1056,7 @@ footer{
   color: #FFFFFF;
   opacity: 1;
   position: relative;
+  font-family: "Lato", sans-serif;
 }
 
 .footer-left-bottom p2{
@@ -933,6 +1072,7 @@ letter-spacing: 0px;
 color: #FFFFFF;
 opacity: 1;
 position: relative;
+font-family: "Noto Sans JP", sans-serif;
 }
 
 .footer-center li{
@@ -974,6 +1114,7 @@ position: relative;
   width: 617px;
   height: 80px;
   opacity: 1;
+  top:177px;
   background: transparent url('../img/copy-bg.png') 0% 0% no-repeat padding-box;
 }
 
@@ -992,6 +1133,7 @@ position: relative;
   font-size: 14px;
   font-style: YuGothic;
   white-space: nowrap;
+  font-family: "Lato", sans-serif;
 }
 
 
@@ -1041,6 +1183,7 @@ position: relative;
   height: 60px;
   background: transparent url('../img/top.png') 0% 0% no-repeat padding-box;
   opacity: 1;
+  font-size: 24px;;
 }
 
 
@@ -1052,13 +1195,19 @@ responsiveスマホ用の表示
   .clear::after {
     content: none;
 }
+.inner{
+  width:100%;
+  margin-right: 0;
+}
+
 
 
 
 @media (min-width: 768px) and (max-width: 1247px) {
 	body {
     padding-top: 60px;
-    margin-right: -100px;
+    margin-right: 0px;
+    margin
     img {
       max-width: 100%;
       height: auto;
@@ -1082,7 +1231,6 @@ height: 100px;
 background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
 background: #3F51B5 0% 0% no-repeat padding-box;
 opacity: 1;
-position: fixed;
 }
 .header-nav-item {
   float: left;
@@ -1090,6 +1238,7 @@ position: fixed;
   list-style: none;
   padding-top: 22px;
 }
+
 
 .header-nav-item a {
   top: 42px;
@@ -1152,13 +1301,14 @@ header{
 @media (max-width: 768px){ 
 .header-nav-item {
   position: relative;
-  left:-85px;
-  top:0px;
+  left:-50px;
+  top:-10px;
   float: left;
   margin-left: 1px;
   list-style: none;
   padding-top: 22px;
-  font-size: 12px;
+  padding-left: 5px;
+  font-size: 16px;
 }
 }
 
@@ -1194,8 +1344,22 @@ topのcss(スマホ用)
 .top-subtitle{
   position: relative;
   left:88px;
-  top:140px;
+  top:40px;
 }
+
+.top-img-left{
+  left:10px;
+  top:180px;
+}
+
+.top-img-right{
+  left:300px;
+  top:180px;
+}
+
+
+
+
 .btn-contact{
   top: 314px;
   left: 50px;
@@ -1224,7 +1388,7 @@ cardのcss(スマホ用)
 }
 
 .card__item {
-  left:25px;
+  left:30px;
 	font-size: 16px;
 	width: calc(33.33333333% - 24px * 2 / 3);
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -1243,6 +1407,9 @@ cardのcss(スマホ用)
   left:150px;
 }
 .media__img{
+  width:300px;
+}
+.media__img img{
   width:300px;
 }
 
@@ -1277,6 +1444,16 @@ Newsのcss(スマホ用)
   left:145px;
   position: relative;
 }
+.btn-square{
+  left:0px;
+}
+.btn-square2{
+  left:0px;
+}
+.btn-square3{
+  left:0px;
+}
+
 
 /*==================================
 priceのcss(スマホ用)
@@ -1307,11 +1484,14 @@ priceのcss(スマホ用)
   margin-top: 40px;
   left:0px;
 }
-.table-under-comment{
-  left:40px;
+.table-under-comment p1{
+  left:-32px;
   position: relative;
-  top:500px;
+  top:40px;
+  font-family: "Noto Sans JP", sans-serif; 
 }
+
+
 /*==================================
 Accessのcss(スマホ用)
 ==================================*/
@@ -1365,7 +1545,7 @@ Contactのcss(スマホ用)
 }
 .contact-form{
   top:200px;
-  left: 50px;
+  left: 60px;
   width: 300px;
   height: 877px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -1421,29 +1601,65 @@ p2{
 }
 }
 
+.footer-center li{
+   position: relative;
+   left:-60px;
+   margin-right:-11px;
+   top:30px;
+   font-size:14px;
+}
+
+
 .footer-left h1 {
   top: 22px;
   left: 20px;
 }
 
 .footer-center-bottom-area {
-width:160px;
-left:0px;
+width:300px;
+left:-120px;
 height:0px;
 h1{
   width:50px;
-  top:240px;
-  left:25px;
+  top:190px;
+  left:145px;
+  position:absolute;
 }
 .footer-center {
   left:0px;
   top:30px;
   position: relative;
 }
-.footer-right{
-  left:-210px;
+}
+.footer-right-image1{
+  top:80px;
+  left:30px;
   position: relative;
 }
+.footer-right-image2{
+  top:80px;
+  left:50px;
+  position: relative;
+}
+.footer-right-image3{
+  top:82px;
+  left:130px;
+  position: relative;
+}
+.footer-right-bottom{
+  top:730px;
+  left: 310px;
+  width: 60px;
+  bottom: 24px;
+  height: 60px;
+  background: transparent url('../img/top.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.footer-nav-item a {
+  font-size: 14px;
+  margin-left:10px;
+}  
 }
 }
 
@@ -1452,5 +1668,5 @@ h1{
 }
 }
 }
-}
+
 

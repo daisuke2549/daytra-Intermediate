@@ -7,9 +7,14 @@
     <meta name="description" content="ディスクリプションです">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/hiraku.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body style="margin-top: 0;margin-left: 0;margin-right: 0;margin-bottom: 0;">
 <div class="inner">
@@ -101,7 +106,7 @@
                     </div><!-- /.media__body -->
                 </a><!-- /.media -->
             </div><!-- /.card__item -->
-            <div class="card__item">
+            <div class="card__item "wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3" >
                 <a class="media" href="">
                     <div class="media__img"><img src="img/card-img.png" alt=""></div><!-- /.media__img -->
                     <div class="media__body">
@@ -329,6 +334,13 @@
 </div>
 <script src="https://unpkg.com/swiper/js/swiper.min.js">
     var mySwiper = new Swiper ('.swiper-container', {});
+</script>
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/JS/hiraku.js">
+$(".offcanvas-left").hiraku({
+    btn:"#offcanvas-btn-left",
+    direction:"left"
+});
 </script>
 </body>
 </html>

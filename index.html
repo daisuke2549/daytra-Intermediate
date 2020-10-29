@@ -7,7 +7,7 @@
     <meta name="description" content="ディスクリプションです">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/css/hiraku.css">
+    <link rel="stylesheet" type="text/css" href="css/hiraku.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -19,13 +19,13 @@
 <body style="margin-top: 0;margin-left: 0;margin-right: 0;margin-bottom: 0;">
 <div class="inner">
 <header>
-    <div class="container clear">
-        <div class="header__inner">    
+    <div class="container clear" id="#top">
         <div class="header-left">
             <h1 class="header-title1"></h1>
         </div>
         <div class="header-right">
-            <ul class="header-nav clear">
+            <div class="menu">
+                <ul>
                 <li class="header-nav-item"><a href="#card">Card</a></li>
     
                 <li class="header-nav-item"><a href="#News">News</a></li> 
@@ -36,9 +36,29 @@
     
                 <li class="header-nav-item"><a href="#contact">Contact</a></li> 
                 </ul>
+            </div>
         </div>
         <div class="clear">     
         </div>
+        <button class="drawer-icon js-drawer for-drawer" type="button" data-target="for-drawer">
+            <span class="drawer-bars">
+                <span class="drawer-bar"></span>
+                <span class="drawer-bar"></span>
+                <span class="drawer-bar"></span>
+            </span>
+        </button><!-- /drawer-icon -->
+        <div class="drawer-content-cover for-drawer">
+            <ul>
+                <li><a href="#card">Card</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#access">Access</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!-- /drawer-content -->
+
+<style>
+</style>        
     </div>
     </div>
 </header>
@@ -54,7 +74,7 @@
        リードリードリード
      </p>
      <div class="btn-contact-area">
-     <button type="contact" class="btn-contact">お問い合わせ</button>
+     <button type="contact" class="btn-contact"><a href="#contact">お問い合わせ</a></button>
     </div>
     <div class="top-round-circle">
         <p1 class="circle"></p1>
@@ -234,6 +254,39 @@
         </div>
     </div>
 </section>
+<section class="question" id="question">
+    <div class="container-question">
+        <h1>Q & A</h1>
+        <p class="section-contact-blue-line"></p>
+        <dl class="qa_items">
+            <div class="qa__item accordion">
+                <dt class="accordion__head">クリックするとどうなりますか？<span class="accordion__icon"></span></dt>
+                <dd class="accordion__body">
+                    <div class="accordion__body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div><!-- /.accordion__body-in -->
+                </dd>
+            </div><!-- /.qa__item -->
+            <div class="qa__item accordion">
+                <dt class="accordion__head">クリックするとどうなりますか？<span class="accordion__icon"></span></dt>
+                <dd class="accordion__body">
+                    <div class="accordion__body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div><!-- /.accordion__body-in -->
+                </dd>
+            </div><!-- /.qa__item -->
+            <div class="qa__item accordion">
+                <dt class="accordion__head">クリックするとどうなりますか？<span class="accordion__icon"></span></dt>
+                <dd class="accordion__body">
+                    <div class="accordion__body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div><!-- /.accordion__body-in -->
+                </dd>
+            </div><!-- /.qa__item -->
+            <div class="qa__item accordion">
+                <dt class="accordion__head">クリックするとどうなりますか？<span class="accordion__icon"></span></dt>
+                <dd class="accordion__body">
+                    <div class="accordion__body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div><!-- /.accordion__body-in -->
+                </dd>
+            </div><!-- /.qa__item -->
+        </dl><!-- /.qa_items -->
+
+
+</section>
 <section class="contact" id="contact">
     <div class="container-contact">
         <h1>Contact</h1>
@@ -328,19 +381,52 @@
         <div class="footer-right-image3"></div>
     </div>
     <div class="footer-right-bottom">
+        <a href="#"><img src="img/top.png" alt="上部へスクロール"></a>
     </div>
 </div>
 </footer>
-</div>
 <script src="https://unpkg.com/swiper/js/swiper.min.js">
     var mySwiper = new Swiper ('.swiper-container', {});
 </script>
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="/JS/hiraku.js">
-$(".offcanvas-left").hiraku({
-    btn:"#offcanvas-btn-left",
-    direction:"left"
+<script src="JS/hiraku.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    jQuery(".js-drawer").on("click", function(e) {
+			e.preventDefault();
+			let targetClass = jQuery(this).attr("data-target");
+			jQuery("." + targetClass).toggleClass("is-checked");
+			return false;
+        });
+  $(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  })
+});
+
+</script>
+<script>
+    jQuery(window).on("scroll", function() {
+
+if (100 < jQuery(this).scrollTop()) {
+    jQuery('.footer-right-bottom').addClass('is-show');
+} else {
+    jQuery('.footer-right-bottom').removeClass('is-show');
+}
+});
 });
 </script>
+<script>
+jQuery('.accordion__head').click(function() {
+            jQuery(this).next().slideToggle();
+            jQuery(this).children('.accordion__icon').toggleClass('is-open');
+        });
+</script>
+
 </body>
 </html>
